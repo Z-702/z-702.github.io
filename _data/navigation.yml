@@ -1,0 +1,10 @@
+main:
+  - title: About
+    key: navAbout
+    url: /
+  - title: Research
+    key: navResearch
+    url: /research/
+  - title: Publications
+    key: navPubs
+    url: /publications/

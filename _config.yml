@@ -1,0 +1,94 @@
+locale: en-US
+site_theme: default
+title: Zixi Wang
+title_separator: "|"
+name: Zixi Wang
+description: "Zixi Wang — undergraduate in Electronic Information Engineering at UESTC. Research in AI for brain imaging, white matter tractography, and medical image analysis."
+url: https://z-702.github.io
+baseurl: ""
+repository: Z-702/z-702.github.io
+
+author:
+  avatar: profile.svg
+  name: Zixi Wang
+  bio: "Undergraduate · Electronic Information Engineering"
+  employer: "University of Electronic Science and Technology of China"
+  github: Z-702
+  # Add your public email or scholar profile here when ready.
+
+publication_category:
+  manuscripts:
+    title: Journal Articles
+  conferences:
+    title: Preprints & Challenge Work
+  submitted:
+    title: Submitted Manuscripts
+
+breadcrumbs: false
+future: true
+read_more: disabled
+talkmap_link: false
+comments:
+  provider: false
+atom_feed:
+  hide: true
+analytics:
+  provider: false
+
+include:
+  - _pages
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - UPSTREAM.md
+  - AGENTS.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - node_modules
+  - .github
+  - .openai
+  - scripts
+  - dist
+  - tmp
+  - .jekyll-cache
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
