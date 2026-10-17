@@ -4,3 +4,7 @@
 @media(max-width:1023px){.publication{grid-template-columns:200px 1fr;gap:22px}.author__avatar img{max-width:110px!important;max-height:110px!important}.page__content{font-size:15px}}
 @media(max-width:650px){.page__title{font-size:1.6rem}.publication{grid-template-columns:1fr;gap:18px;padding:25px 0}.pub-image{max-width:100%;min-height:0;padding:18px 14px 25px}.pub-image img{max-height:240px;object-fit:contain}.pub-content h3{font-size:16px!important}.authors{font-size:11px!important}.pub-summary{font-size:12px!important}.pub-links{font-size:11px}.figure-credit{font-size:10px!important}.pub-toolbar{padding-top:12px;gap:6px}.filters{gap:2px}.filters button{padding:6px 7px;font-size:10px}.pub-count{font-size:10px}.masthead__menu-item a{font-size:13px}.masthead__menu-item--lg a{font-size:17px}dialog{padding:23px}.page__content{font-size:15px}.focus-list strong{display:block}.focus-list span{font-size:.92em}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Keep long affiliations readable and the footer in document flow. */
+.author__urls .author__desktop{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;line-height:1.7;margin-bottom:8px}
+.page__footer{position:relative;bottom:auto;clear:both;margin-top:3rem}
+body{padding-bottom:0}
