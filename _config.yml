@@ -9,9 +9,9 @@ baseurl: ""
 repository: Z-702/z-702.github.io
 
 author:
-  avatar: profile.svg
+  avatar: ""
   name: Zixi Wang
-  bio: "Undergraduate · Electronic Information Engineering"
+  bio: "Undergraduate student in Electronic Information Engineering"
   employer: "University of Electronic Science and Technology of China"
   github: Z-702
   # Add your public email or scholar profile here when ready.
@@ -20,7 +20,7 @@ publication_category:
   manuscripts:
     title: Journal Articles
   conferences:
-    title: Preprints & Challenge Work
+    title: Preprints
   submitted:
     title: Submitted Manuscripts
 

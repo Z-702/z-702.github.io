@@ -1,8 +1,33 @@
 ---
+layout: archive
+title: "Publications"
 permalink: /publications/
-title: Publications & Manuscripts
-title_zh: 论文与研究稿件
 author_profile: true
 ---
-<p class="section-note" data-en="My work on AI for neuroimaging and medical image analysis. Publication status is indicated for each item; * denotes equal contribution." data-zh="人工智能在脑影像与医学影像分析中的相关研究。每项成果均标明发表状态；* 表示同等贡献。">My work on AI for neuroimaging and medical image analysis. Publication status is indicated for each item; * denotes equal contribution.</p>
-{% include selected-publications.html %}
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

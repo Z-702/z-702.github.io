@@ -6,6 +6,7 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+  {% if author.avatar %}
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
@@ -14,10 +15,12 @@
     {% endif %}
   </div>
 
+  {% endif %}
+
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio" data-en="Undergraduate · Electronic Information Engineering" data-zh="本科生 · 电子信息工程">{{ author.bio }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">

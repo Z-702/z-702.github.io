@@ -1,10 +1,7 @@
 main:
-  - title: About
-    key: navAbout
-    url: /
-  - title: Research
-    key: navResearch
-    url: /research/
   - title: Publications
-    key: navPubs
     url: /publications/
+  - title: Research
+    url: /research/
+  - title: 中文
+    url: /zh/
