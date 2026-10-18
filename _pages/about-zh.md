@@ -1,7 +1,9 @@
 ---
 permalink: /zh/
 title: "关于我"
+lang: zh-CN
 author_profile: true
+publication_cards: true
 ---
 
 我是电子科技大学电子信息工程专业的本科生。
@@ -15,7 +17,7 @@ author_profile: true
 
 ## 论文与研究稿件
 
-以下列出已发表论文、预印本与投稿稿件。* 表示同等贡献；点击标题可查看研究简介和方法图。
+以下列出已发表论文、预印本与投稿稿件。* 表示同等贡献。
 
 {% include selected-publications.html %}
 

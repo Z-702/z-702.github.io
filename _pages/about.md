@@ -2,6 +2,7 @@
 permalink: /
 title: "About me"
 author_profile: true
+publication_cards: true
 redirect_from:
   - /about/
 ---
@@ -17,6 +18,6 @@ My research interests lie in deep learning for brain imaging, particularly diffu
 
 ## Selected publications
 
-*\* indicates equal contribution. Click a title for the summary and method figure.*
+*\* indicates equal contribution.*
 
 {% include selected-publications.html %}

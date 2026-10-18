@@ -9,6 +9,20 @@ year: "2025"
 publication_status: "Preprint:"
 authors: "Junyi Wang, Xi Zhu, Yikun Guo, **Zixi Wang**, Haichuan Gao, Le Zhang, Fan Zhang"
 author_profile: true
+abstract_id: "registration"
+image: "/images/papers/registration.png"
+image_alt: "Pipeline for MR and ultrasound registration through style transfer, affine alignment, and local deformation"
+image_width: "2866"
+image_height: "1464"
+image_caption: "MR + ULTRASOUND / REGISTRATION"
+summary: "A coarse-to-fine pipeline combining 3D CycleGAN style transfer, affine registration, and local deformation to align pre-surgery MR and post-resection ultrasound images."
+summary_zh: "融合 3D CycleGAN 风格迁移、仿射配准与局部形变，逐步对齐术前磁共振和肿瘤切除后的超声影像。"
+display_venue: "ReMIND2Reg / Learn2Reg 2024"
+badge: "Preprint · 2025"
+badge_zh: "预印本 · 2025"
+badge_class: "neutral"
+paperurl: "https://arxiv.org/abs/2508.05240"
+has_bibtex: true
 ---
 
 **Authors:** Junyi Wang, Xi Zhu, Yikun Guo, **Zixi Wang**, Haichuan Gao, Le Zhang, Fan Zhang

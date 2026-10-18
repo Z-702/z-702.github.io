@@ -1,4 +1,31 @@
 {% assign selected = site.publications | sort: 'order' %}
+<div class="pub-toolbar">
+  <div class="filters" role="group" aria-label="Filter research">
+    <button class="active" data-filter="all" aria-pressed="true" data-i18n="allWork">All work</button>
+    <button data-filter="brain" aria-pressed="false" data-i18n="brainWork">Brain imaging</button>
+    <button data-filter="medical" aria-pressed="false" data-i18n="medicalWork">Medical imaging</button>
+  </div>
+  <span class="pub-count" aria-live="polite">{{ selected.size | prepend: '0' }} <span data-i18n="works">WORKS</span></span>
+</div>
 {% for post in selected %}
-  {% include archive-single.html %}
+<article class="publication{% if post.abstract_id == 'tracto' %} featured{% endif %}" data-category="{% if post.category == 'submitted' %}medical{% else %}brain{% endif %}">
+  <div class="pub-image{% if post.abstract_id == 'tracto' %} black{% endif %}">
+    <img src="{{ post.image | relative_url }}" width="{{ post.image_width }}" height="{{ post.image_height }}" alt="{{ post.image_alt | escape }}" loading="lazy">
+    <span class="image-caption">{{ post.image_caption }}</span>
+  </div>
+  <div class="pub-content">
+    <div class="pub-meta"><span class="venue">{{ post.display_venue }}</span><span class="badge {{ post.badge_class }}" data-en="{{ post.badge | escape }}" data-zh="{{ post.badge_zh | escape }}">{{ post.badge }}</span></div>
+    <h3>{{ post.title }}</h3>
+    <p class="authors">{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% if post.note %}<p class="author-note" data-i18n="cofirst">* Equal contribution · First-listed co-first author</p>{% endif %}
+    <p class="pub-summary" data-en="{{ post.summary | escape }}" data-zh="{{ post.summary_zh | escape }}">{{ post.summary }}</p>
+    <div class="pub-links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer" data-i18n="paperLink">Paper ↗</a>{% endif %}
+      {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+      <button data-abstract="{{ post.abstract_id }}" data-i18n="abstract">Abstract +</button>
+      {% if post.has_bibtex %}<button data-cite="{{ post.abstract_id }}">BibTeX ↗</button>{% else %}<span class="manuscript-note" data-i18n="manuscriptNote">Manuscript · not a published article</span>{% endif %}
+    </div>
+  </div>
+</article>
 {% endfor %}
+<p class="figure-credit" data-i18n="figureCredit">Framework figures are from the corresponding research papers.</p>

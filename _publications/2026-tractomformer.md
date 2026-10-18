@@ -10,6 +10,21 @@ publication_status: "Published in"
 authors: "**Zixi Wang\\***, Junyi Wang\\*, Yi Pan, Tengfei Xue, Weidong Cai, Yogesh Rathi, Carl-Fredrik Westin, Lauren J. O’Donnell, Fan Zhang"
 author_profile: true
 note: "* Equal contribution."
+abstract_id: "tracto"
+image: "/images/papers/tracto.jpeg"
+image_alt: "TractoMFormer pipeline: tractography, DTractoEmbedding images, and an MViT classification model"
+image_width: "1428"
+image_height: "934"
+image_caption: "TRACTOMFORMER / FRAMEWORK"
+summary: "A parcellation-free framework that turns individual white matter streamlines into multi-scale representations for group classification and attention-based interpretation."
+summary_zh: "无需预先脑区分割，直接将白质纤维流线转换为多尺度表示，用于群体分类及基于注意力的结果解释。"
+display_venue: "NeuroImage · 2026"
+badge: "Published"
+badge_zh: "已发表"
+badge_class: ""
+paperurl: "https://doi.org/10.1016/j.neuroimage.2026.121992"
+codeurl: "https://github.com/Z-702/mvit_PPMI"
+has_bibtex: true
 ---
 
 **Authors:** **Zixi Wang\***, Junyi Wang\*, Yi Pan, Tengfei Xue, Weidong Cai, Yogesh Rathi, Carl-Fredrik Westin, Lauren J. O’Donnell, Fan Zhang

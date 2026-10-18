@@ -9,6 +9,19 @@ year: ""
 publication_status: "Submitted to"
 authors: "Xiwen Yu, Junyi Wang, Jincan Zhu, **Zixi Wang**, Lipeng Ning, Guoqiang Xie, Fan Zhang"
 author_profile: true
+abstract_id: "landmarks"
+image: "/images/papers/landmarks.jpeg"
+image_alt: "Three-stage CT facial landmark detection framework with preprocessing, 2D HRNet localization, and 3D depth recovery"
+image_width: "1373"
+image_height: "784"
+image_caption: "CT / ANATOMICAL LANDMARKS"
+summary: "A projection-based framework combining HRNet landmark localization with constrained 3D depth recovery for dense facial landmark detection in CT."
+summary_zh: "通过投影图像上的 HRNet 标志点检测与带约束的三维深度恢复，实现 CT 面部密集解剖标志点定位。"
+display_venue: "Artificial Intelligence in Medicine"
+badge: "Submitted manuscript"
+badge_zh: "投稿稿件"
+badge_class: "pending"
+has_bibtex: false
 ---
 
 **Authors:** Xiwen Yu, Junyi Wang, Jincan Zhu, **Zixi Wang**, Lipeng Ning, Guoqiang Xie, Fan Zhang

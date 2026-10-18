@@ -1,45 +1,4 @@
-/* Academic Pages layout with the Latin Modern Roman family used in TeX documents.
-   Font files are bundled locally under the GUST Font License. */
-@font-face {
-  font-family: "Latin Modern Roman";
-  src: url("../fonts/latin-modern/lmroman10-regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Latin Modern Roman";
-  src: url("../fonts/latin-modern/lmroman10-bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Latin Modern Roman";
-  src: url("../fonts/latin-modern/lmroman10-italic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Latin Modern Roman";
-  src: url("../fonts/latin-modern/lmroman10-bolditalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-:root {
-  --academic-font: "Latin Modern Roman", "Times New Roman", Times, "Noto Serif CJK SC", "Songti SC", SimSun, serif;
-}
-body, h1, h2, h3, h4, h5, h6,
-.greedy-nav a, .sidebar p, .sidebar li, .sidebar h3,
-.sidebar .author__name, .page__footer-follow li,
-.archive__item-title, .archive__item-title a {
-  font-family: var(--academic-font);
-}
-.page__content { line-height: 1.65; }
-/* Layout corrections for long affiliations and long publication lists. */
+/* Keep the Academic Pages default fonts and layout. */
 .author__urls .author__desktop {
   white-space: normal;
   overflow-wrap: anywhere;

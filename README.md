@@ -2,7 +2,7 @@
 
 Personal website: https://z-702.github.io/
 
-Uses the original [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template, with its default layout, sidebar and publication archive. Typography uses locally bundled Latin Modern Roman, with Times New Roman and Chinese Song-style fallbacks. Font settings and small layout corrections are in `assets/css/custom.css`.
+Uses the original [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template, with its default layout, sidebar and fonts. The original illustrated publication cards are retained. Small layout corrections are in `assets/css/custom.css`, and the publication card styles are in `assets/css/publications.css`.
 
 ## Edit content
 
@@ -13,7 +13,8 @@ Uses the original [Academic Pages](https://github.com/academicpages/academicpage
 | Chinese homepage | `_pages/about-zh.md` |
 | Research | `_pages/research.md` |
 | Individual papers, authors, status, summaries and figures | `_publications/*.md` |
-| Publication categories and page | `_pages/publications.html` and `_config.yml` |
+| Paper list layout | `_includes/selected-publications.html` |
+| Abstract dialogs and BibTeX controls | `assets/js/publications.js` |
 | Navigation | `_data/navigation.yml` |
 | Figures | `images/papers/` |
 | BibTeX | `files/*.bib` |
@@ -38,4 +39,4 @@ bundle exec jekyll serve
 
 ## Credits
 
-Academic Pages and its MIT license are retained. See [UPSTREAM.md](UPSTREAM.md). Latin Modern font files are distributed unmodified with their GUST license and original documentation under `assets/fonts/latin-modern/`. Research figures belong to the corresponding papers. The unpublished CT submission PDF and cover letter are not included.
+Academic Pages and its MIT license are retained. See [UPSTREAM.md](UPSTREAM.md). Previously bundled Latin Modern font files are retained with their license under `assets/fonts/latin-modern/`, but are not loaded by the current website. Research figures belong to the corresponding papers. The unpublished CT submission PDF and cover letter are not included.
