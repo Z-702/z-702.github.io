@@ -34,7 +34,8 @@
 }
 body, h1, h2, h3, h4, h5, h6,
 .greedy-nav a, .sidebar p, .sidebar li, .sidebar h3,
-.sidebar .author__name, .page__footer-follow li {
+.sidebar .author__name, .page__footer-follow li,
+.archive__item-title, .archive__item-title a {
   font-family: var(--academic-font);
 }
 .page__content { line-height: 1.65; }
